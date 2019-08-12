@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HTML>
+<head>
+    <link rel="stylesheet" href="style/style.css">
+	<title>Sintáxis HTML5 y CSS3</title>
+</head>
+
+<body>
+<h1 style="text-align: center; color:rgb(0, 78, 0);">Semana 3: Sintáxis HTML5 y CSS3</h1>
+<p>A continución se presentarán elementos importantes básicos para la construcción 
+    de HTML estándar y HTML5. Además se listan propiedades significativas para 
+    lograr efectos de estilo en los elementos de HTML por medio de CSS3. 
+</p>
+<div>
+<h2 class="colorh2">HTML Estándar</h2>
+    <div>
+        <p>
+    <div class="row">
+        <div class="column2 solid">
+
+            <h3>div</h3>
+            <p class="justify">
+            Define una división o sección en un documento HTML.
+            <br>
+            Sintáxis:<p class="letraCodigo"> &lt; div &gt;</p>
+            <br>
+            Ejemplo:
+            <div class="colordiv2">
+            Esto es parte del div
+            </div>
+
+        </p>
+        </div>
+        
+        <div class="column2 solid">
+            <h3>span</h3>
+            <p class="justify">
+            Se usa para poner color a una parte del texto.
+            <br>
+            Sintáxis:<p class="letraCodigo"> &lt; span &gt;</p>
+            <br>
+            Ejemplo:
+            <div>
+            Ese carro es <span style="color:blue">azul</span>
+            </div>
+        </div>
+        
+        <div class="column2 solid">
+            <h3>p</h3>
+            <p class="justify">
+                Define un párrafo. Los navegadores agregar márgenes antes de este tag.
+                Sintáxis:<p class="letraCodigo"> &lt; p &gt;</p>
+                Ejemplo:
+                <p>Esto es un párrafo.</p>
+                <p>Esto es otro párrafo.</p>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="column2 solid">
+            <h3>img</h3>
+            <p class="justify">
+                Define una imagen en la página HTML.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt; img src="fuente" &gt;</p>
+                Ejemplo:
+                <img src="img/happy.png">
+            </p>
+        </div>
+        
+        
+        <div class="column2 solid">
+            <h3>ol</h3> 
+            <p class="justify">
+                    Define una lista ordenada.
+                    <br>
+                    Sintáxis:<p class="letraCodigo"> &lt; ol &gt; (Lista)<br> &lt; li &gt; (Elemento)</p>
+                    <br>
+                    Ejemplo:
+                    <ol>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                    </ol>
+                    </p>
+        </div>
+        
+        <div class="column2 solid">
+            <h3>ul</h3> 
+            <p class="justify">
+            Define una lista no ordenada.
+            <br>
+            Sintáxis:<p class="letraCodigo"> &lt; ul &gt; (Lista)<br> &lt; li &gt; (Elemento)</p>
+            <br>
+            Ejemplo:
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ul>
+            </p>
+        </div>
+        
+    </div> 
+    <div class="row">
+        <div class="column2 solid">
+                <h3>a</h3> 
+                <p class="justify">
+                Define un hipervínculo, usado como un link a otra página.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt; a href="link" &gt; Titulo &lt; /a &gt;</p>
+                <br>
+                Ejemplo:
+                <br>
+                <ul>
+                <li><a href="https://www.w3schools.com/tags/tag_a.asp">a tag link</a></li>
+                </ul>
+                </p>
+        </div>
+        
+        <div class="column2 solid">
+                <h3>button</h3>
+                <p class="justify">
+                Define un botón "clickable".
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt;button type="button"&gt; Titulo&lt;/button&gt;</p>
+                Ejemplo:
+                <br>
+                <br>
+                <button type="button" class="button" onclick="alert('Hello world!')">Presioname!</button>
+                </p>
+        </div>
+        
+        <div class="column2 solid">
+                <h3>quotations</h3> 
+                <p class="justify">
+                Define una sección que es citada de otra fuente.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt;q&gt;&lt;/q&gt;</p>
+                Ejemplo:
+                <br>
+                <p>Citar: <q>Reproducir las palabras dichas o escritas por alguien para apoyar o confirmar algo que se dice.</q></p> 
+                </p>
+        </div> 
+        
+    </div>
+    <div class="row">
+        <div class="column2 solid">
+                <h3>style</h3> 
+                <p class="justify">
+                Atributo utilizado para específicar el estilo de un elemento.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt;tag style="atributo"&gt;&lt;/tag&gt;</p>
+                Ejemplo:
+                <h5 style="text-align:center;">Estilo alineado al centro</h5>
+                </p>
+        </div>
+        
+        <div class="column2 solid">
+                <h3>table</h3> 
+                <p class="justify">
+                Etiqueta para insertar tablas.
+                <br>
+                Sintáxis:<p class="letraCodigo"> 
+                    &lt;table&gt;
+                    <br>
+                    &lt;tr&gt;&lt;/tr&gt; (fila)
+                    &lt;td&gt;&lt;/td&gt; (columna)
+                    &lt;/table&gt;</p>
+                Ejemplo:
+                <br>
+                <table align="center">
+                <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                </tr>
+                <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                </tr>
+                </table>
+                </p>
+        </div>
+        
+        <div class="column2 solid">
+                <h3>h1, h2, h3, h4, h5, h6</h3>
+                <p class="justify">
+                Etiquetas para definir diferentes tipos de encabezados.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt; h#&gt;</p>
+
+                Ejemplo:
+                <h3 style="text-align:center;">Encabezado h3</h3>
+                <h6 style="text-align:center;">Encabezado h6</h6>
+                </p>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="column2 solid">
+                <h3>b</h3> 
+                <p class="justify">
+                Específica texto en negrita.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt; b &gt;</p>
+                <br>
+                Ejemplo:
+                <br>
+                <b>Esto es texto en negrita</b>
+                </p>
+        </div>
+        
+        <div class="column2 solid">
+                <h3>i</h3>
+                <p class="justify">
+                Específica texto en cursiva.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt; i &gt;</p>
+                <br>
+                Ejemplo:
+                <br>
+                <i>Esto es texto en cursiva</i>
+                </p>
+        </div>
+        
+        <div class="column2 solid">
+                <h3>br</h3>
+                <p class="justify">
+                Inserta un salto de línea.
+                <br>
+                Sintáxis:<p class="letraCodigo"> &lt; br &gt;</p>
+                <br>
+                Ejemplo:
+                <br>
+                Este texto tiene <br> un salto de línea.
+                </p>
+        </div>
+        
+    </div>
+
+
+        
+        </p>
+    </div>
+</div>
+<div>
+    <h2 class="colorh2">HTML5</h2>
+    <div>
+        <p>
+        <div class="row">
+            <div class="column2 solid">
+                    <h3>article</h3>
+                    <p class="justify">
+                    Específica contenido independiente.
+                    <br>
+                    Sintáxis:<p class="letraCodigo"> &lt; article &gt;</p>
+                    Ejemplo:
+                    <article>
+                    <h5>Título</h5>
+                    <p>Texto del artículo</p>
+                    </article> 
+                    </p>
+            </div>
+            <div class="column2 solid">
+                    <h3>aside</h3>
+                    <p class="justify">
+                    Define contenido aparte del que está situado.
+                    <br>
+                    Sintáxis:<p class="letraCodigo"> &lt; aside &gt;</p>
+                    Ejemplo:
+                    <p>Tengo un perro Schnauzer.</p>
+                    <aside>
+                    <b>Schanauzer: </b>
+                    Raza de perro alemana.
+                    </aside> 
+                    </p>
+            </div>
+            <div class="column2 solid">
+                    <h3>summary</h3>
+                    <p class="justify">
+                    Define un encabezado para la sección de detalles.
+                    <br>
+                    Sintáxis:
+                    <p class="letraCodigo"> &lt;summary &gt;</p>
+                    Ejemplo:
+                    <details>
+                    <summary>Encabezado de detalles</summary>
+                    <p>Cuerpo de detalles</p>
+                    </details>
+                    
+                    </p>
+            </div>
+        
+        
+         
+        </div>
+        <div class="row">
+                <div class="column2 solid">
+                        <h3>details</h3>
+                        <p class="justify">
+                        Especifica detalles adicionales que pueden verse o esconderese.
+                        <br>
+                        Sintáxis:<p class="letraCodigo"> &lt; details &gt;</p>
+                        Ejemplo:
+                        <details>
+                        <summary>Raza Schnauzer</summary>
+                        <p>Originario de Alemania en los siglos XV y XVI</p>
+                        </details>
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>dialog</h3> 
+                        <p class="justify">
+                        Define cuadros de diálogo o ventanas.
+                        <br>
+                        Sintáxis:<p class="letraCodigo"> &lt;dialog open&gt;&lt;/dialog&gt;</p>
+                        Ejemplo:
+                        <details>
+                        <summary>Abrir para ver el cuadro</summary>
+                        <dialog open>Esto es una ventana de diálogo</dialog>
+                        </details>
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>figure</h3> 
+                        <p class="justify">
+                        Específica contenido como ilustraciones, diagramas, fotos, etc.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt;figure&gt;Contenido&lt;/figure&gt;</p>
+                        Ejemplo:
+                        <figure>
+                        <img src="img/dog.png">
+                        </figure>
+                        </p>
+                </div>
+        
+        
+        
+        </div>
+        <div class="row">
+                <div class="column2 solid">
+                        <h3>figcaption</h3>
+                        <p class="justify">
+                        Define una descripción para un elemento &lt;figure&gt;
+                        <p class="letraCodigo"> &lt; figcaption &gt;</p>
+                        Ejemplo:
+                        <figure>
+                        <img src="img/pig.png">
+                        <figcaption style="text-align: center">Fig.1 - Pig</figcaption>
+                        </figure>
+                        </p>
+                </div>
+                
+                <div class="column2 solid">
+                        <h3>main</h3>
+                        <p class="justify">
+                        Especifica el contenido principal del documento.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt; main &gt;</p>
+                        Ejemplo:
+                        <main>
+                        Esto es contenido principal.
+                        </main>
+                        Esto no es contenido principal
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>mark</h3>
+                        <p class="justify">
+                        Define texto que debe ser resaltado.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt; mark &gt;</p>
+                        Ejemplo:
+                        <br>
+                        Las clases de WEB son <mark>miércoles y viernes</mark> 
+                        </p>
+                </div>
+                
+                 
+                
+        </div>
+        <div class="row">
+                <div class="column2 solid">
+                        <h3>nav</h3> 
+                        <p class="justify">
+                        Define un conjunto de links.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt; nav &gt;</p>
+                        Ejemplo:
+                        <nav style="text-align: center">
+                            <a href="https://www.w3schools.com/tags/tag_nav.asp">nav</a> |
+                            <a href="https://www.w3schools.com/tags/att_a_href.asp">href</a> |
+                            <a href="https://www.w3schools.com/tags/tag_a.asp">a tag</a> |
+                        </nav>
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>progress</h3> 
+                        <p class="justify">
+                        Representa el progreso de una tarea.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt;progress value="#progreso" max="#total" &gt;&lt;/progress&gt;</p>
+                        Ejemplo:
+                        <br>
+                        <progress class="center" value="33" max="100"></progress>
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>meter</h3>
+                        <p class="justify">
+                        Define una medición escalar dentro de un rango conocido, o un valor fraccional.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt;meter value="#medida" min="#min" max="#max" &gt;&lt;/meter&gt;</p>
+                        Ejemplo:
+                        <br>
+                        <meter class="center" value="2" min="0" max="10">2 out of 10</meter>
+                        </p>
+                </div>
+
+                
+                
+                
+        </div>
+        <div class="row">
+                <div class="column2 solid">
+                        <h3>section</h3> 
+                        <p class="justify">
+                        Define una sección en el documento. (Capítulos, encabezados, pie de página).
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt;section &gt;</p>
+                        Ejemplo:
+                        <section>
+                            Esto es una sección del documento.
+                        </section>
+                        <section>
+                            Esto es otra sección del documento.
+                        </section>
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>time</h3>
+                        <p class="justify">
+                        Define un horario o fecha que el usuario pueda entender. También funciona para codificar tiempos para la máquina.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt;time&gt;</p>
+                        Ejemplo:
+                        <br>
+                        La clase es a las <time>9:30</time> miércoles y viernes.
+                        <br>
+
+                        </p>
+                </div>
+                <div class="column2 solid">
+                        <h3>wbr</h3>
+                        <p class="justify">
+                        Especifica a un texto donde debe agregar un salto de línea.
+                        <br>
+                        Sintáxis:
+                        <p class="letraCodigo"> &lt;wbr&gt;</p>
+                        Ejemplo:
+                        <br>
+                        Esteesuntextolargoparapoderespecíficardondese<wbr>realizaelsaltodelínea</wbr>
+
+                        </p>
+                </div>
+                
+                
+                
+        </div> 
+        </p>
+    </div>
+</div>
+<div>
+    <h2 class="colorh2">CSS3</h2>
+    <p>
+    <div class="row">
+            
+        <div class="column2 solid">
+        <h3>border-radius</h3>
+        <p class="justify">
+        Esta propiedad redondea los bordes de los elementos.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo"> [ &lt;length&gt; | &lt;percentage&gt; ]{1,4} [ / [ &lt;length&gt; | &lt;percentage&gt; ]{1,4} ]</p>
+        Ejemplo:
+        <br>
+        <div class="rounded-border center">
+                Border radius
+        </div>
+
+        </p>
+        </div>
+        <div class="column2 solid">
+        <h3>box-shadow</h3>
+        <p class="justify">
+        Esta propiedad permite agregar efectos de sombra a los elementos.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">  &lt;horizontal_offset&gt; &lt;vertical_offset&gt; &lt;blur&gt; &lt;spread_distance&gt; &lt;color&gt; </p>
+        Ejemplo:
+        <br>
+        <div class="drop-shadow center">
+                Box Shadow
+        </div>
+
+        </div>
+        <div class="column2 solid">
+        <h3>text-decoration</h3> 
+        <p class="justify">
+        Esta propiedad permite agregar efectos de sombra a los elementos.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">  &lt;text-decoration-line&gt; &lt;text-decoration-style&gt; &lt;text-decoration-color&gt;</p>
+        Ejemplo:
+    
+        <p class="text-decoration center">Text Decoration</p> 
+        
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column2 solid">
+        <h3>text-stroke</h3>
+        <p class="justify">
+        Esta propiedad permite trazar un texto con bordes más anchos.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">  &lt;border-size&gt; &lt;text-color&gt;</p>
+        Ejemplo:
+    
+        <p class="text-stroke center">Text Stroke</p> 
+        
+        </div>
+        <div class="column2 solid">
+        <h3>word-break</h3> 
+        <p class="justify">
+        Especifica oportunidades de ajuste suave dentro de las palabras donde es normal y permisible romper líneas de texto.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo"> normal | keep-all | break-all</p>
+        <div class="word-break">
+        <strong>word-break:</strong>
+        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        </div>
+        
+        </div>
+        <div class="column2 solid">
+        <h3>word-wrap</h3>
+        <p class="justify">
+                Especifica si las palabras irrompibles se pueden romper de manera arbitraria para evitar el desbordamiento.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo"> normal | break-word</p>
+        Ejemplo:
+    
+        <p class="word-wrap">Floccinaucinihilipilification of antidisestablishmentarianism.</p>
+        
+
+        </div>
+    </div>
+
+    <div class="row"> 
+        <div class="column2 solid">
+        <h3>text-overflow</h3> 
+        <p class="justify">
+        Especifica que hacer con el texto si es muy largo para el espacio destinado.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo"> [ clip | ellipsis | &lt;string&gt; ]{1,2}</p>
+        Ejemplo:
+        <p>Este es un texto bastante largo que se va a cortar</p> 
+        <p class="text-overflow">Este es un texto largo que no va a ser cortado</p> 
+        
+
+        </div>
+        <div class="column2 solid">
+        <h3>transition</h3> 
+        <p class="justify">
+        Es una propiedad para definir las transiciones de los elementos.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">'transition-duration' | 'transition-property' | 'transition-timing-function' | 'transition-delay'</p>
+        Ejemplo:
+        <div class="resize center">Pasa el mouse</div>
+        
+        
+        </div>
+        <div class="column2 solid">
+        <h3>resize</h3> 
+        <p class="justify">
+        Propiedad para que el usuario cambie el tamaño de un elemento.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">none | both | horizontal | vertical</p>
+        Ejemplo:
+        <div class="resize-div center">Cambiame el tamaño</div>
+        
+                
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column2 solid">
+        <h3>grid-area</h3> 
+        <p class="justify">
+        Propiedad para acomodar los elementos dentro de un "grid".
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">grid-line [ / grid-line ]{0,3}</p>
+        Ejemplo:
+        <div id="grid">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+              </div>
+        
+        </div>
+        <div class="column2 solid">
+        <h3>grid-gap</h3> 
+
+        <p class="justify">
+        Propiedad para dejar espacios entre las filas y columnas del "grid".
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">'grid-row-gap' 'grid-column-gap'?</p>
+        Ejemplo:
+        <div id="gridgap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                </div>
+        </div>
+        <div class="column2 solid">
+        <h3>columns</h3>
+        <div class="multicol">
+        <h3>Ejemplo de Columnas</h3>
+        <p>Propiedad para definir múltiples columnas en un documento.</p>
+        Rango de valores:
+        <p class="letraCodigo">'column-width' || 'column-count'</p>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column2 solid">
+        <h3>opacity</h3> 
+        <p class="justify">
+        Propiedad para establecer transparencia en un elemento.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">'value' {0,1}</p>
+        Ejemplo:
+        <div class="div-opacity bottom center"></div>
+        <div class="div-opacity top center"></div>
+        </div>
+
+
+        <div class="column2 solid">
+        <h3>linear-gradient</h3>
+        <p class="justify">
+        Esta propiedad permite mezclar colores de manera linear.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">  linear-gradient(dirección, color1, color2);</p>
+        Ejemplo:
+    
+        <div class="div-gradient center"></div>
+        </div>
+
+        <div class="column2 solid">
+        <h3>align-content</h3>
+        <p class="justify">
+        Esta propiedad permite acomodar el contenido de un cuadro.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">flex-start | flex-end | center | space-between | space-around | stretch</p>
+        Ejemplo:
+    
+        <div class="outer-container center">
+            <div class="black"></div>
+        </div>
+                
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column2 solid">
+        <h3>justify-content</h3>
+        <p class="justify">
+        Esta propiedad permite acomodar el contenido de un cuadro siguiendo la línea principales.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">flex-start | flex-end | center | space-between | space-around</p>
+        Ejemplo:
+    
+        <div class="outer-containerj">
+                <div class="red">1</div>
+                <div class="green">2</div>
+                <div class="blue">3</div>
+        </div>
+
+        </div>
+
+        <div class="column2 solid">
+        <h3>place-content</h3>
+        <p class="justify">
+        Esta propiedad aplica las propiedades align-content y justify-content en una sola.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">[ normal | baseline-position | content-distribution | content-position ]{1,2}</p>
+        Ejemplo:
+    
+        <div id="grid3">
+                <div class="red">1</div>
+                <div class="green" >2</div>
+                <div class="blue">3</div>
+        </div>
+
+        </div>
+        <div class="column2 solid">
+        <h3>border-image</h3>
+        <p class="justify">
+        Esta propiedad permite aplicarle bordes a los cuadros.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">'border-image-source'||'border-image-slice'|border-image-width'/border-image-repeat'</p>
+        Ejemplo:
+        <div class="border-image center">
+                Esta caja tiene un borde.
+        </div>
+        
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column2 solid">
+        <h3>box-decoration-break</h3>
+        <p class="justify">
+        Esta propiedad permite al desarrollador especificar que pasa cuando un elemento se separa por cambio de página o de línea.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">slice | clone</p>
+        Ejemplo:
+        <div class="inner-box center">
+                Esta caja tiene un borde.
+        </div>
+        </div>
+
+        <div class="column2 solid">
+        <h3>hanging-punctuation</h3>
+        <p class="justify">
+        Determina si los signos de puntuación cuelgan fuera del cuadro de línea (o en la sangría) al principio o al final de una línea de texto.
+        <br>
+        Rango de valores:
+        <p class="letraCodigo">none | [ first || [ force-end | allow-end ] || last ]</p>
+        Ejemplo:
+        <p class="blockquote">Esto es un texto de prueba </p>
+        </div>
+    </div>
+
+        
+        </p>
+</div>
+
+<footer>
+        <p>Fecha de creación: 12/08/2019</p>
+        <p>Referencias: 
+        <br>
+        <a href="https://www.w3schools.com/html/default.asp">HTML: https://www.w3schools.com/html/default.asp</a>
+        <br>
+        <a href="https://www.w3schools.com/html/html5_new_elements.asp">HTML5: https://www.w3schools.com/html/html5_new_elements.asp</a>
+        <br>
+        <a href="https://www.quackit.com/css/css3/properties/">CSS3: https://www.quackit.com/css/css3/properties/</a>
+            
+        </p>
+      </footer>
+</body>
+
+</HTML>
