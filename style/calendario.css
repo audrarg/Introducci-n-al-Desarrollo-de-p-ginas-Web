@@ -1,0 +1,23 @@
+/*instrucciones generales*/
+* { margin: auto; }
+/*cabecera de la página*/
+h1 { text-align: center; padding: 0.5em; }
+/*div principal del calendario*/
+#calendario { border: 4px double black ; max-width: 536px; 
+              background-color:#fffafa; text-align: center; }
+/*tabla del calendario*/
+#diasc { border: 1px solid black; border-collapse: 
+         separate; border-spacing: 4px; }
+#diasc th,#diasc td { font: normal 14pt arial; width: 70px; height: 30px; }
+#diasc th { color: #7e5d02; background-color: #fff67e }
+#diasc td { color: #492736; background-color: #fff891 }
+/*línea de la fecha actual*/
+#fechaactual { font: bold 12pt arial; padding: 0.4em }
+#fechaactual i { cursor: pointer ; }
+#fechaactual i:hover { color: rgb(0, 53, 0); text-decoration: underline; }
+/*formulario de busqueda de fechas*/
+#buscafecha { background-color: #94ca7b; color: #000000; padding: 5px }
+#buscafecha select, #buscafecha input  { background-color: #075804; 
+            color: #ffffff; font: bold 10pt arial;  }
+#buscafecha [type=text]  { text-align: center; }
+#buscafecha  [type=button] { cursor: pointer; }
