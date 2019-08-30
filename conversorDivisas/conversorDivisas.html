@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Conversor de Divisas</title> 
+<link rel="stylesheet" type="text/css" href="conversorDivisas.css" media="all" />
+<script type="text/javascript" src="conversorDivisas.js"></script>
+</head>
+<body>
+<h1>Conversor de Divisas</h1>
+
+<div class="row" id="banderas">
+    <div class="column"><img src="conversorDivisasimg/costa-rica.png"></br>Costa Rica</br></br>Colón</div>
+    <div class="column"><img src="conversorDivisasimg/united-states.png"></br>Estados Unidos</br></br>Dólar</div>
+    <div class="column"><img src="conversorDivisasimg/canada.png"></br>Canadá</br></br>Dólar Canadiense</div>
+    <div class="column"><img src="conversorDivisasimg/mexico.png"></br>México</br></br>Peso Mexicano</div>
+    <div class="column"><img src="conversorDivisasimg/panama.png"></br>Panamá</br></br>Balboa</div>
+    <div class="column"><img src="conversorDivisasimg/spain.png"></br>España</br></br>Euro</div>
+    <div class="column"><img src="conversorDivisasimg/colombia.png"></br>Colombia</br></br>Peso Colombiano</div>
+    <div class="column"><img src="conversorDivisasimg/australia.png"></br>Australia</br></br>Dólar Australiano</div>
+    <div class="column"><img src="conversorDivisasimg/united-kingdom.png"></br>Reino Unido</br></br>Libra esterlina</div>
+    <div class="column"><img src="conversorDivisasimg/russia.png"></br>Rusia</br></br>Rublo ruso</div>
+</div>
+<div class="row" id="codigoISO">
+    <div class="column"></br>CRC</div>
+    <div class="column"></br>USD</div>
+    <div class="column"></br>CAD</div>
+    <div class="column"></br>MXN</div>
+    <div class="column"></br>PAB</div>
+    <div class="column"></br>EUR</div>
+    <div class="column"></br>COP</div>
+    <div class="column"></br>AUD</div>
+    <div class="column"></br>GBP</div>
+    <div class="column"></br>RUB</div>
+</div>
+<div class="row" id="conversor">
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="crc" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="usd" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="cad" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="mxn" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="pab" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="eur" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="cop" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="aud" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="gbp" maxlength="10" size="8" /></div>
+    <div class="column"><img src="conversorDivisasimg/star.png" id="imgClickAndChange" onclick="cambioIMG()"></br></br><input type="text" name="rub" maxlength="10" size="8" /></div>
+</div>
+
+<div id="boton">
+<input type="button" value="Convertir" onclick="convertir()" />
+<input type="button" value="Refrescar" onclick="refrescar()" />
+</div>
+</body>
+</html>

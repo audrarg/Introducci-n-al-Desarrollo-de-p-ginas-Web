@@ -1,0 +1,33 @@
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 10%;
+  }
+
+  img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  #banderas{
+        background-color: rgb(207, 207, 207); height: 200px; text-align: center; border: 1px solid black;
+  }
+
+  #codigoISO{
+    background-color: rgb(133, 206, 136); height: 50px; text-align: center; border: 1px solid black; 
+  }
+
+  #conversor{
+    background-color: rgb(255, 255, 255); height: 150px; text-align: center;  border: 1px solid black; 
+  }
+
+  #boton{
+    text-align: center; margin-top: 10px;
+  }
