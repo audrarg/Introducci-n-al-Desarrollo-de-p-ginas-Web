@@ -1,0 +1,45 @@
+img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+
+#carouselExampleControls{ background-color: rgb(255, 255, 255);
+                          height: 18cm;
+}
+
+#headingOne { background-color: rgb(140, 212, 126)}
+#headingTwo { background-color: rgb(140, 212, 126)}
+#headingThree { background-color: rgb(140, 212, 126)}
+#headingFour { background-color: rgb(140, 212, 126)}
+#headingFive { background-color: rgb(140, 212, 126)}
+
+.btn-link{
+  color: black;
+}
+
+
+
+.carousel-control-prev-icon:after {
+ 
+  font-size: 55px;
+  color: red;
+}
+tr {
+  text-align: center;
+}
+th {
+    background: rgba(54,205,50, 0.6);
+    color: #006400
+}
+td {
+    background: rgba(128,128,0, 0.12);
+    border-top: 1px solid rgba(54,205,50, 0.5);
+    border-bottom: 1px solid rgba(54,205,50, 0.5)
+}
+#map {
+        height: 100%;
+      }
