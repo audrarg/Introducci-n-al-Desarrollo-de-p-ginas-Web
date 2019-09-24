@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="leaflet-routing-machine.css" />
+    
+    </script>
+    <style>
+      #map {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map = L.map('map').setView([9.938514, -84.073366], 15);
+
+      L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=MBCMrY7Axv7wMoJdxOuw').addTo(map);
+     // L.marker([9.938514, -84.073366]).addTo(map)
+       // .bindPopup("<b>Instituto Tecnólogico de Costa Rica</b><br />Sede Barrio Amón").openPopup();
+        
+      //  L.marker([9.939571, -84.093649]).addTo(map)
+		 // .bindPopup("<b>Casa de Audra</b><br />Barrio Pitahaya").openPopup();
+
+      L.Routing.control({
+            waypoints: [
+            L.latLng(9.938514, -84.073366),
+                L.latLng(9.939571, -84.093649)
+                
+            ],
+            routeWhileDragging: true
+        }).addTo(map);
+    
+      
+	var popup = L.popup();
+
+    </script>
+  </body>
+</html>
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Leaflet Routing Machine Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="leaflet-routing-machine.css" />
+    <style>
+        .map {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="leaflet-routing-machine.js">
+    var map = L.map('map');
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.Routing.control({
+        waypoints: [
+            L.latLng(57.74, 11.94),
+            L.latLng(57.6792, 11.949)
+        ],
+        routeWhileDragging: true
+    }).addTo(map);
+    
+    </script>
+</body>
+</html>-->
